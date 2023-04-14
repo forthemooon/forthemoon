@@ -1,122 +1,117 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <style>
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-        * {
-            font-family: "Pretendard",serif;
-        }
+    <style> 
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {font-family: "Pretendard",serif;}
+
         body {
-            background-color:#FFD0DA;
-            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B6%84%ED%99%8D+%EB%A5%B4%ED%83%84%EC%9D%B4/%EB%B6%84%ED%99%8D%EB%B0%98%EC%A7%9D%EC%9D%B4.png');
-        }
-        .profile {
-            width: 100px;
-            height: 100px;
+            background-color:#fff8e0;
+            background-position: center;
+            background-size: cover; }
+
+        .profile {  
+            width: 100px; height: 100px; background-color: #fff8e0;
             border-radius: 100%;
             border: 2px solid white;
-            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B3%B4%EB%9D%BC+%EB%A5%B4%ED%83%84%EC%9D%B4/%EB%B3%B4%EB%9D%BC%EB%A5%B4%ED%83%84_%ED%94%84%EB%A1%9C%ED%95%84.png');
+            background-image: url('FORTHEMOON_TEXTLOGO_YELLOW.jpg');
             background-position: center;
-            background-size: cover;
-        }
-        .main {
-            color : #000000;
-            font-size: 18px;
-            size : 20px;
-            margin-top: 30px;
+            background-size: cover; }
+
+        .main { 
+            color:rgb(44, 44, 44); font-size: 23px;
+             margin-top: 50px; margin-bottom: 10; }
+
+        .sub {  
+            color: rgb(32, 32, 32); font-size: 14px;
+            margin-top: 20; margin-bottom: 4px; }
+
+        .sub1 { 
+            color: rgb(32, 32, 32); font-size: 13px;
+            margin-top: 5; margin-bottom: 20px; }
+        
+        .sub2 { 
+            color: rgb(32, 32, 32); font-size: 13px;
+            margin-top: 5; margin-bottom: 13px; }
+
+
+  
+
+        .wrap { 
+            width: 300px; 
+            margin:70px auto 260px auto;
+     
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+          
+        .wrap > a { width: 300px; height: 50px; background-color: white;
+            border-radius: 50px; 
             margin-bottom: 10px;
-        }
-        .sub {
-            color : #000000;
+            font-size:14px;
+            font-weight: 400;
+            color: #313131;
+                 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; }
+
+        .wrap > a:hover{background-color: #fff2bb;}  
+
+    
+
+        .minibutton {
+            width: 141px;
+            height: 50px;
+            margin: 0px 10px 10px auto;
+            border-radius: 50px;
+            background-color: white;
             font-size: 14px;
             font-weight: 400;
-            size : 14px;
-            margin-top: 0px;
-            margin-bottom: 30px;
-        }
-        .wrap {
-            width: 300px;
-            margin: 30px auto 0px auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .bigbutton {
-            width: 320px;
-            height: 59px;
-            border-radius: 100px;
-            background-color: white;
-            margin-bottom: 16px;
-            font-size: 16px;
-            font-weight: bold;
-            color:#000000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            box-shadow: 0px 2px 8px rgba(152, 151, 185, 0.24);
-        }
-        .minibutton {
-            width: 152px;
-            height: 59px;
-            border-radius: 100px;
-            background-color: white;
-            font-size: 16px;
-            font-weight: bold;
-            color:#000000;
+            color:#313131;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            box-shadow: 0px 2px 8px rgba(152, 151, 185, 0.24);
-            margin: 0px 8px 17px 8px;
+            margin-bottom: 0px 8px 17px 8px;
         }
         .buttons {
             display: flex;
         }
-        .wrap > a:hover {
-            background-color: #f2f2f2;
-        }
+
         .buttons > a:hover {
-            background-color: #f2f2f2;
+            background-color: #fff2bb;
         }
-        .rtan {
-            width: 100px;
-            height: 170px;
-            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B3%B4%EB%9D%BC+%EB%A5%B4%ED%83%84%EC%9D%B4/%EC%95%89%EC%95%84%EC%9E%88%EB%8A%94%EB%A5%B4%ED%83%84.png');
-            background-position: center;
-            background-size: cover;
-            position: absolute;
-            bottom: 63px;
-        }
-        .pink {
-            width: 100%;
-            height: 95px;
-            background-color: #fdeb9c;
-            position : absolute;
-            bottom : 0;
-            
-        }
+
     </style>
 </head>
 <body>
     <div class="wrap">
         <div class="profile"></div>
         <h1 class="main">FOR THE MOON</h1>
-        <p class="sub">JEWERLY / PET SUPPLIES</p>
-        <a class="bigbutton"target="_blank" href="https://www.forthemoon.co.kr/">포더문 쥬얼리 스토어</a>
-        <a class="bigbutton"target="_blank" href="https://smartstore.naver.com/forthemoon">포더문 펫 스토어</a>
+        <p class="sub">사람과 동물이 행복한 포더문</p>
+        <p class="sub1">JEWERLY  /  PET SUPPLIES</p>
+
+        <br>
+        <a class="bigbutton"target="_blank" href="https://www.forthemoon.co.kr/">포더문 쥬얼리 :: Shop</a>
+        <a class="bigbutton"target="_blank" href="https://smartstore.naver.com/forthemoon">포더문 펫 PET :: Shop</a>
+        <a class="snsicon" target="_blank" href="https://www.instagram.com/orgazize.moonlife">MOON LIFE :: 회사 생활</a>
+ 
         <BR>
-        <div style="color:#FFFFFF;width: 320px;font-size: 14px;margin-bottom: 8px;">인스타그램</div>
-        <div class="buttons">
-            <a class="minibutton" target="_blank" href="https://www.instagram.com/_forthemoon">포더문 쥬얼리</a>
-            <a class="minibutton"target="_blank" href="https://www.instagram.com/forthemoon_pet">포더문 펫</a>
+        <p class="sub2">인스타그램 / SNS</p>
+            <div class="buttons">
+            <a class="minibutton" target="_blank" href="https://www.instagram.com/_forthemoon">JEWERLY Insta</a>
+            <a class="minibutton"target="_blank" href="https://www.instagram.com/forthemoon_pet">PET Insta</a>
         </div>
+
+            <div class="buttons">
+            <a class="minibutton" target="_blank" href="https://www.instagram.com/_forthemoon">Tiktok</a>
+            <a class="minibutton"target="_blank" href="https://www.instagram.com/forthemoon_pet">Youtube</a>
+            </div>
         <div class="pink"></div>
         <div class="rtan"></div>
     </div>
 </body>
-</html>
